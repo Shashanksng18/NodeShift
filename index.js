@@ -230,7 +230,7 @@ app.use((err, req, res, next) => {
 
 const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`🚀 Server running on port ${process.env.PORT || 3000} in ${process.env.NODE_ENV || 'development'} mode`);
-  console.log(`📝 Rate limiting active:`);
+  console.log(`📝 Rate limiting active: `);
   console.log(`   - General routes: 100 requests per 15 minutes`);
   console.log(`   - Auth routes: 5 requests per 15 minutes`);
 });
